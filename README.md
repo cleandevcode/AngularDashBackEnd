@@ -4,15 +4,15 @@ Boilerplate code for quick setup for CRUD applications using express/knex/postgr
 
 ##Setup - Detailed Instructions Below
 
-1. Git clone the repo ```git clone [url]``` and remove origin ```git remote remove origin```
+1. Git clone the repo `git clone [url]` and remove origin `git remote remove origin`
 2. npm install
 3. setup postgres backend
 4. Modify .env file to suit your backend and migrate/seed db
-  1. migrate tables ```npx knex migrate:latest```
-  2. run seeds ```npx knex seed:run```
-5. npm run server
-6. npm run test
-7. modify code to suit your needs
+5. migrate tables `npx knex migrate:latest`
+6. run seeds `npx knex seed:run`
+7. npm run server
+8. npm run test
+9. modify code to suit your needs
 
 ## Setup PostgreSQL
 
@@ -24,12 +24,11 @@ If you dont have postgres follow this link (Follow directions until you're able 
 
 In terminal run the following commands:
 
-1. ```psql``` -- To get into postgreSQL utility
-2. ```CREATE DATABASE todo;``` -- Creates development server
-3. ```CREATE DATABASE todo-test;``` -- Creates testing server
-4. ```\q```
+1. `psql` -- To get into postgreSQL utility
+2. `CREATE DATABASE todo;` -- Creates development server
+3. `CREATE DATABASE todo-test;` -- Creates testing server
+4. `\q`
 5. CD into your repo
-
 
 ## Environmental Variables at Runtime
 
@@ -48,16 +47,5 @@ Create a ".env" file at the root of your project and add the following for both 
 ```
 
 ## api endpoints
-GET     / check server is working
 
-GET     /api/genres Get the list of Genres
-GET     /api/genres/:id Get single Genre by Id
-POST    /api/genres Add new Genre
-PUT     /api/genres/:id Update Genre
-DELETE  /api/genres/:id Delete Genre
-
-GET     /api/movies Get the list of Movies
-GET     /api/movies/:id Get single Movie by Id
-POST    /api/movies Add new Movie
-PUT     /api/movies/:id Update Movie
-DELETE  /api/movies/:id Delete Movie
+GET /api/orders
