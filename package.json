@@ -1,0 +1,35 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --maxWorkers=1",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "DeMing Yao",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "custom-env": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "morgan": "^1.9.1",
+    "pg": "^8.0.3",
+    "pg-connection-string": "^2.4.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
